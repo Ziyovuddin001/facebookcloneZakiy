@@ -1,7 +1,7 @@
 .messageSender {
   display: flex;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-bottom: 190px;
   flex-direction: column;
   background-color: white;
   border-radius: 15px;
@@ -23,7 +23,7 @@
 .messageSender__top > form > input {
   outline-width: 0;
   border: none;
-  padding: 5px 20px;
+  padding: 0px 20px;
   margin: 0 10px;
   border-radius: 999px;
   background-color: #eff2f5;

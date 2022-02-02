@@ -21,9 +21,9 @@ function Feed() {
     }, [])
     return (
         <div className="feed">
-            <MessageSender />
-
             <StoryReel />
+
+            <MessageSender />
 
             {posts.map((post) => (
                 <Post

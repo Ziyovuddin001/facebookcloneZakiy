@@ -12,7 +12,8 @@ function Login() {
     const signIn = () => {
         auth.signInWithPopup(provider)
             .then(result => {
-
+                provider.addScope('email');
+                provider.addScope('user_friends');
                 dispatch({
                     type: actionTypes.SET_USER,
                     user: result.user
@@ -37,8 +38,6 @@ function Login() {
                 />
             </div>
 
-            <input className='input' required name="phone">
-            </input>
 
             <Button className="login__button" onClick={signIn} type="submit">
                 Sign In
